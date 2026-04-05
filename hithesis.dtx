@@ -8938,12 +8938,15 @@ breaklines=true
 \IfFontExistsTF{Iosevka Slab}{
   \setmonofont{Iosevka Slab}
 }{
-  \setmonofont{Latin Modern Mono}
+  \IfFontExistsTF{Latin Modern Mono}{
+    \setmonofont{Latin Modern Mono}
+  }{}
 }
 %    \end{macrocode}
 %
 % 添加fallback字体，这样无论本机/CI/Debian/macOS都不会炸
 % \changes{v3.1e}{2026/1/8}{添加fallback字体，这样无论本机/CI/Debian/macOS都不会炸}
+% \changes{v3.1e}{0000/00/00}{修复Latin Modern Mono fallback缺少\cs{IfFontExistsTF}防护导致CI编译文档失败的问题}
 %    \begin{macrocode}
 \RequirePackage[
   top=2.5cm, bottom=2.5cm,
