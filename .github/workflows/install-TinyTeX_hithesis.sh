@@ -38,7 +38,7 @@ tlmgr install lua-alt-getopt luahbtex luahbtex.x86_64-linuxmusl lualatex-math lu
 tlmgr install luaotfload luaotfload.x86_64-linuxmusl luatex luatex.x86_64-linuxmusl luatexbase
 tlmgr install luatexja makeindex makeindex.x86_64-linuxmusl mdwtools metafont
 tlmgr install metafont.x86_64-linuxmusl metalogo mfirstuc mfware mfware.x86_64-linuxmusl modes
-tlmgr install mptopdf mptopdf.x86_64-linuxmusl ms multirow natbib newpx newtx norasi-c90
+tlmgr install mptopdf mptopdf.x86_64-linuxmusl multirow natbib newpx newtx norasi-c90
 tlmgr install ntheorem oberdiek pdfescape pdflscape pdfpages pdftex pdftex.x86_64-linuxmusl
 tlmgr install pdftexcmds pgf placeins plain platex platex-tools platex.x86_64-linuxmusl psnfss
 tlmgr install ptex ptex-base ptex-fonts ptex.x86_64-linuxmusl realscripts refcount relsize
@@ -55,8 +55,6 @@ tlmgr install zapfding zhmetrics zhmetrics-uptex zhnumber
 tlmgr install adjustbox colortbl tcolorbox fontawesome5 textpos yfonts wasysym bbm
 tlmgr install biblatex mathtools minted pgfplots bbm-macros flowchart makeshape
 tlmgr install collection-fontsrecommended cite overpic eepic caption silence ifsym
-
-
 
 echo "Finish install extra packages."
 
